@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "project-rn",
+    "slug": "project-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Telemedicina-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.example.projectrn",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Telemedicina-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/Telemedicina.icon.png"
+    }
+  }
+}
