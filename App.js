@@ -25,7 +25,7 @@ export default function App() {
 
         <Stack.Screen name="Login" component={LoginScreen} options={{ title: '' }} />
         <Stack.Screen name="Home" component={HomeScreen} options={{title: ''}} />
-        <Stack.Screen name="Atendimentos" component={ScheduledScreen} options={{title: ''}}/>
+        <Stack.Screen name="Atendimentos" component={ScheduledScreen} options={{title: 'Consultas'}}/>
         <Stack.Screen name="Atendimento" component={AtendimentoScreen} options={{title: ''}}/>
       </Stack.Navigator>
     </NavigationContainer>

@@ -6,8 +6,8 @@ export default function LoginScreen({ navigation }) {
   const [senha, setSenha] = useState('');
 
   // CPF e senha padrão para validação
-  const cpfPadrao = '04930943000';  // Exemplo de CPF
-  const senhaPadrao = '123456';   // Exemplo de senha
+  const cpfPadrao = '12345678900';  // Exemplo de CPF
+  const senhaPadrao = '1234';   // Exemplo de senha
 
   const handleLogin = () => {
     if (cpf === '' || senha === '') {
@@ -22,7 +22,7 @@ export default function LoginScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/icon.png')} style={styles.image} />
+      <Image source={require('../assets/Dr.Cam.png')} style={styles.image} />
       <Text style={styles.text}>CPF</Text>
       <TextInput
         style={styles.input}
@@ -46,6 +46,7 @@ export default function LoginScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
+      <Text style={styles.textpassword}>Esqueceu sua senha? Clique aqui!</Text>
     </View>
   );
 }
@@ -58,11 +59,11 @@ const styles = StyleSheet.create({
     padding: 25,
   },
   image: {
-    width: 200, // Largura da imagem
-    height: 250, // Altura da imagem
-    marginBottom: 30,
-    right: -80,
-    marginTop: -50,
+    width: 300, // Largura da imagem
+    height: 100, // Altura da imagem
+    marginBottom: 100,
+    right: -37,
+    marginTop: -100,
   },
   title: {
     fontSize: 55,
@@ -91,5 +92,10 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#A9A9A9',
+  },
+  textpassword: {
+    color: '#A9A9A9',
+    margin: 15,
+    left: 125,
   }
 });
